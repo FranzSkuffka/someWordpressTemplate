@@ -1,0 +1,48 @@
+@import 'settings'
+.slot
+	height (97vh - contentHeight)
+	float left
+	@extend $relative
+	&Wrap
+		@extend $block
+		pointer-events none
+		padding 15px 45px
+		@extend $onTop
+		overflow-hidden
+	&Link
+		height 100%
+		width 100%
+		@extend $block
+		@extend $absolute
+		top 0
+		z-index 0
+		pointer-events all
+		&:before
+			content '\00BB'
+			@extend $absolute
+			@extend $block
+			bottom 30px
+			right 30px
+			height 45px
+			width @height
+			line-height (@height - 3px)
+			text-align center
+			fs 32px
+			border-radius 50%
+.callToAction
+	&_button
+		display inline-block
+		padding 14px 2.3vw
+		pointer-events all
+		margin-right 5px
+		&_wrap
+			@extend $absolute
+			bottom 30px
+			left 45px
+.contact
+.address
+	@extend $block
+	&Wrap
+		display inline-block
+		width 240px
+		white-space nowrap

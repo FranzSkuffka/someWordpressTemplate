@@ -1,0 +1,66 @@
+@import 'node_modules/rupture/rupture/index'
+$serif
+	font-family Droid serif
+$centerType
+	text-align center
+$sans
+	font-family Droid sans
+body
+	@extend $sans
+	letter-spacing 0.4px
+.slot
+	& h2
+		font-weight 400 
+		fs 32px
+		@extend $serif
+		margin-bottom 28px
+	& p
+	& address		
+		fs 17px
+		font-weight 300
+		line-height 1.5
+		@extend $sans
+a
+	text-decoration none
+address
+	font-style normal
+.site-branding
+	text-transform uppercase
+	@extend $serif
+.banner
+	@extend $serif
+	&Headline
+	&Tagline
+		@extend .slot h2
+		@extend $centerType
+		+above(6)
+			text-align right 
+			margin-right 66.6%
+h1
+	font-weight 400
+
+.callToAction_button
+	@extend $serif	
+	fs 16px
+	font-weight 300
+.excerptDate
+	font-weight 600
+.search-field
+.search-submit	
+.sidebar
+	@extend $serif
+	font-weight 300
+	fs 18px
+	&Button
+		fs 16px
+		@extend $sans
+		@extend $centerType
+		text-transform uppercase
+.address
+	&Name
+		text-transform uppercase
+		font-weight 600
+.contactMail
+	text-decoration underline
+.entryTitle
+	@extend .slot h2

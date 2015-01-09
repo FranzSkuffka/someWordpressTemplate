@@ -1,0 +1,43 @@
+@import 'settings'
++below(4)
+	.slot
+		width 100%
++between(4,6)
+	.slot
+		width 50%
+		&Last
+			width 100%
+			&.subSite
+				width 50%
+	.highlightZone
+		width (98/2)%
+		&.subSite
+			width 100%
+			border-left-width 0
++above(6)
+	.slot.slot
+		width $aThird
+		&.secondSlot.subSite
+			margin-left $aThird
+		&.lastSlot.subSite
+			width $aThird
+	.highlightZone.highlightZone
+		width (98/3)%
+		border-left-width 1vw
+
+	.page
+		&Image
+			width $aThird
+			overflow hidden
+			height contentHeight
+	.entryContentWrap
+
+		width (100% - $aThird)
+		height contentHeight
+
+		margin-top 0
+	.entryHeader
+
+		top (contentHeight + 1.5vw)
+	.sidebar
+		height contentHeight

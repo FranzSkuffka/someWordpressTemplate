@@ -1,0 +1,27 @@
+
+.highlightZone
+	@extend $absolute
+	left 0
+	top 0
+	height 100vh
+	z-index -100
+	width 100%
+	border-left outerPadding solid
+
+.banner
+	@extend $relative
+	height contentHeight
+	overflow hidden
+	&Headline
+		margin-top 35vh
+		@extend $onTop
+		@extend $relative
+	&Tagline
+		@extend $onTop
+		@extend $block
+		@extend $relative
+		margin 0 45px
+	&Image
+		top 0
+		@extend $absolute
+		min-width 100%

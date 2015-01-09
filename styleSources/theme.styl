@@ -1,0 +1,56 @@
+@import 'settings'
+body
+	background  $theme['foreground'];
+	color $theme['foreground'];
+
+a
+	color $theme['foreground']
+
+.site-titlePartOne
+	color $theme['accent']
+.highlightZone
+	background $theme['accent'];
+	border-color $theme['accent'];
+.emphasizedSlot
+	color $theme['background'];
+.secondSlot
+	background $theme['alternateBackground'];
+.slotLast
+	background $theme['background'];
+.banner
+	&Headline
+		color $theme['accent'];
+	&Tagline
+		color $theme['foreground'];
+.slotLink:before
+	border 3px solid $theme['accent'];
+	color $theme['foreground'];
+	background $theme['alternateBackground'];
+.callToAction_button
+	.emphasizedSlot &
+		background $theme['background'];
+		border-radius 2px
+		box-shadow 0 4px 5px 1px rgba(0,0,0,0.205)
+		color $theme['foreground'];
+		font-style italic
+.excerptDate
+	color $theme['accent'];
+.sidebar
+	background $theme['alternateBackground'];
+	&Button
+		background $theme['accent'];
+		color $theme['background'];
+.search-field
+.search-submit
+	background transparent
+	color $theme['foreground'];
+	border none
+.address
+	&Name
+		color $theme['accent']
+.entry
+	&Header
+		color $theme['background']
+	&ContentWrap
+		background-color $theme['background']
+

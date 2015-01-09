@@ -1,0 +1,59 @@
+@import 'settings'
+body
+	padding outerPadding
+	@extend $relative
+.site-branding
+	@extend $absolute
+	@extend $onTop
+	text-transform uppercase
+	top 1vw 
+	left 1vh
+	padding 15px 45px
+.site-title
+	margin 0
+
+$sidebarTopRowHeight= 65px
+.sidebar
+	@extend $absolute
+	@extend $onTop
+	@extend $block
+	top 0
+	right 0
+	height 98vh
+	&State
+		display none
+	&Button
+		@extend $block
+		@extend $absolute
+		top 0
+
+		height headerHeight 
+		width @height
+		left -@width 
+
+		line-height @height - 2px 
+	&Wrap
+		@extend .sidebar
+		top outerPadding
+		right outerPadding
+.sidebar
+	overflow hidden
+.widget_search
+	@extend $relative
+.search-submit
+	@extend $absolute 
+	@extend $block
+	overflow hidden
+	height 65px
+	top 0
+	right 0
+.search-field
+	height 65px
+	margin-left 10px
+	padding-left 15px
+	overflow hidden
+.menu
+	margin-left 10px
+.page_item
+.current_page_item
+	padding 15px	
